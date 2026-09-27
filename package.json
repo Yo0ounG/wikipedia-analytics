@@ -1,0 +1,64 @@
+{
+  "name": "wikipedia-interest-analysis",
+  "version": "1.0.0",
+  "description": "Agent Skill: analyze Wikipedia interest in a topic across languages using Wikimedia pageview data.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.34.5",
+  "bin": {
+    "wia": "dist/cli.js"
+  },
+  "scripts": {
+    "wia": "tsx src/cli/index.ts",
+    "analyze": "tsx src/cli/index.ts analyze",
+    "resolve-topic": "tsx src/cli/index.ts resolve-topic",
+    "generate-report": "tsx src/cli/index.ts generate-report",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "smoke": "tsx scripts/smoke.ts",
+    "check": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test:coverage && pnpm build",
+    "consistency": "tsx scripts/check-consistency.ts",
+    "eval:grounding": "tsx evals/check-grounding.ts"
+  },
+  "dependencies": {
+    "commander": "^15.0.0",
+    "d3-scale": "^4.0.2",
+    "d3-shape": "^3.2.0",
+    "dejavu-fonts-ttf": "^2.37.3",
+    "pdfkit": "^0.20.2",
+    "svg-to-pdfkit": "^0.1.8",
+    "tsx": "^4.23.15",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@jest/globals": "^30.5.2",
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-shape": "^3.2.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.20.4",
+    "@types/pdfkit": "^0.17.6",
+    "esbuild-register": "^3.6.0",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "jest": "^30.5.2",
+    "prettier": "^3.9.9",
+    "ts-jest": "^29.4.14",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.70.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

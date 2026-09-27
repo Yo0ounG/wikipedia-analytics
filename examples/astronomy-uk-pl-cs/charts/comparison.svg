@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="238" viewBox="0 0 760 238" role="img" aria-labelledby="chart-title chart-desc">
+<title id="chart-title">Change in average daily views: astronomy</title>
+<desc id="chart-desc">uk: baseline → latest -59.6%; pl: baseline → latest -16.1%; cs: baseline → latest -33.3%</desc>
+<rect x="0" y="0" width="760" height="238" fill="#ffffff"/>
+<text x="20" y="20" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Change in average daily views: astronomy</text>
+<text x="20" y="36" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" fill="#52606d">Solid: baseline window → latest window · Light (if shown): last 12 months vs previous 12 matching months</text>
+<text x="582" y="54" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="start" font-weight="bold" fill="#52606d">Average views/day (absolute)</text>
+<text x="150" y="54" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="start" font-weight="bold" fill="#52606d">Change in average daily views (%)</text>
+<line x1="180" y1="76" x2="180" y2="218" stroke="#e4e7eb" stroke-width="1"/>
+<text x="180" y="72" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">-60%</text>
+<line x1="240" y1="76" x2="240" y2="218" stroke="#e4e7eb" stroke-width="1"/>
+<text x="240" y="72" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">-40%</text>
+<line x1="300" y1="76" x2="300" y2="218" stroke="#e4e7eb" stroke-width="1"/>
+<text x="300" y="72" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">-20%</text>
+<line x1="360" y1="76" x2="360" y2="218" stroke="#e4e7eb" stroke-width="1"/>
+<text x="360" y="72" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">0%</text>
+<line x1="420" y1="76" x2="420" y2="218" stroke="#e4e7eb" stroke-width="1"/>
+<text x="420" y="72" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">20%</text>
+<line x1="480" y1="76" x2="480" y2="218" stroke="#e4e7eb" stroke-width="1"/>
+<text x="480" y="72" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">40%</text>
+<line x1="540" y1="76" x2="540" y2="218" stroke="#e4e7eb" stroke-width="1"/>
+<text x="540" y="72" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">60%</text>
+<line x1="360" y1="76" x2="360" y2="218" stroke="#9aa5b1" stroke-width="1"/>
+<text x="20" y="100" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" fill="#0072B2">uk</text>
+<rect x="181.14" y="86" width="178.86" height="20" fill="#0072B2" fill-opacity="1"/>
+<text x="177.14" y="102" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="end" font-weight="normal" fill="#1f2933">-59.6% baseline → latest</text>
+<text x="582" y="100" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" fill="#52606d">45.5 → 18.4 views/day</text>
+<text x="20" y="146" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" fill="#D55E00">pl</text>
+<rect x="311.61" y="132" width="48.39" height="20" fill="#D55E00" fill-opacity="1"/>
+<text x="307.61" y="148" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="end" font-weight="normal" fill="#1f2933">-16.1% baseline → latest</text>
+<text x="582" y="146" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" fill="#52606d">56.1 → 47.1 views/day</text>
+<text x="20" y="192" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" text-anchor="start" font-weight="bold" fill="#009E73">cs</text>
+<rect x="259.98" y="178" width="100.02" height="20" fill="#009E73" fill-opacity="1"/>
+<text x="255.98" y="194" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="end" font-weight="normal" fill="#1f2933">-33.3% baseline → latest</text>
+<text x="582" y="192" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" fill="#52606d">25.4 → 17.0 views/day</text>
+</svg>

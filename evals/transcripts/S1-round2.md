@@ -1,0 +1,1 @@
+Analysis complete. Czech Wikipedia "Přerušovaný půst" shows a 53.4% decline in pageviews over two years (13.0 → 6.1 daily views). Polish Wikipedia has no article on intermittent fasting, preventing the requested comparison. Evidence strength is moderate. For full details including charts and PDF report, see output/intermittent-fasting-Q1666254/pl-cs_2024-09-01_2026-08-31/.

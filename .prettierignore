@@ -1,0 +1,10 @@
+dist
+coverage
+output
+.cache
+node_modules
+pnpm-lock.yaml
+fixtures/**/*.json
+evals/transcripts
+evals/round*-output
+examples

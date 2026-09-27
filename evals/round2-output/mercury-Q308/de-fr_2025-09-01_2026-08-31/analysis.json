@@ -1,0 +1,3740 @@
+{
+  "schemaVersion": "1.0",
+  "status": "success",
+  "generatedAt": "2026-09-26T09:57:59.525Z",
+  "request": {
+    "query": null,
+    "qid": "Q308",
+    "searchLanguage": "en",
+    "languages": [
+      "de",
+      "fr"
+    ],
+    "period": {
+      "spec": "12m",
+      "start": "2025-09-01",
+      "end": "2026-08-31"
+    },
+    "access": "all-access",
+    "agent": "user",
+    "exclusions": {
+      "dateRanges": [],
+      "largestSpike": false
+    },
+    "missingAsZero": false
+  },
+  "topic": {
+    "query": null,
+    "searchLanguage": "en",
+    "status": "resolved",
+    "qid": "Q308",
+    "label": "Mercury",
+    "description": "first planet from the Solar System and smallest among all, tellurian and with extreme temperatures",
+    "confidence": "high",
+    "method": "explicit_qid",
+    "matchedTitle": null,
+    "candidates": [],
+    "articles": {
+      "de": {
+        "language": "de",
+        "project": "de.wikipedia",
+        "dbname": "dewiki",
+        "title": "Merkur (Planet)",
+        "url": "https://de.wikipedia.org/wiki/Merkur_(Planet)"
+      },
+      "fr": {
+        "language": "fr",
+        "project": "fr.wikipedia",
+        "dbname": "frwiki",
+        "title": "Mercure (planète)",
+        "url": "https://fr.wikipedia.org/wiki/Mercure_(plan%C3%A8te)"
+      }
+    },
+    "missingLanguages": [],
+    "messages": [
+      "Concept given explicitly by Wikidata QID."
+    ]
+  },
+  "period": {
+    "start": "2025-09-01",
+    "end": "2026-08-31",
+    "days": 365,
+    "completeMonths": 12
+  },
+  "methodology": {
+    "source": "Wikimedia Analytics Pageviews API (per-article and aggregate, daily)",
+    "access": "all-access",
+    "agent": "user",
+    "notes": [
+      "Monthly averages per reported day are the primary layer for trend analysis; daily data is used for spikes and volatility.",
+      "Baseline/latest windows: first/last 3 complete months (or first/last ≤28 days for short periods).",
+      "Trend: OLS of ln(views+1) over time, linear OLS and Spearman rank correlation; no significance test.",
+      "Outliers: robust z-score (MAD) of log residuals from a 29-day rolling median; influence measured by re-running without spike days.",
+      "Evidence strength is a rule-based score, not a probability."
+    ]
+  },
+  "languages": {
+    "de": {
+      "language": "de",
+      "project": "de.wikipedia",
+      "articleTitle": "Merkur (Planet)",
+      "articleUrl": "https://de.wikipedia.org/wiki/Merkur_(Planet)",
+      "status": "analyzed",
+      "data": {
+        "expectedDays": 365,
+        "reportedDays": 365,
+        "missingDays": 0,
+        "excludedDays": 0,
+        "completeness": 1,
+        "missingRanges": [],
+        "excludedRanges": [],
+        "issues": [],
+        "noViewsRecorded": false,
+        "missingTreatedAsZero": false
+      },
+      "metrics": {
+        "totalViews": 147947,
+        "averageDailyViews": 405.33,
+        "medianDailyViews": 402,
+        "baseline": {
+          "label": "first 3 complete months (Sep 2025–Nov 2025)",
+          "start": "2025-09-01",
+          "end": "2025-11-30",
+          "averageDailyViews": 423.43
+        },
+        "latest": {
+          "label": "last 3 complete months (Jun 2026–Aug 2026)",
+          "start": "2026-06-01",
+          "end": "2026-08-31",
+          "averageDailyViews": 294.33
+        },
+        "absoluteChange": -129.1,
+        "percentChange": -30.49,
+        "annualizedGrowth": {
+          "percent": -36.42,
+          "method": "Trend-implied annual rate from the log-linear monthly fit: (1 + monthly rate)^12 − 1",
+          "note": "Descriptive rate for the analysed period, not a forecast."
+        },
+        "peak": {
+          "date": "2025-11-25",
+          "views": 786
+        },
+        "volatility": {
+          "dailyCoefficientOfVariation": 0.2758,
+          "shortTermVolatility": 0.1644,
+          "monthlyCoefficientOfVariation": 0.1881,
+          "level": "low"
+        }
+      },
+      "trend": {
+        "status": "ok",
+        "granularity": "month",
+        "observations": 12,
+        "direction": "down",
+        "slope": -13.2155,
+        "normalizedSlope": -3.703,
+        "rSquared": 0.383,
+        "linearRSquared": 0.3569,
+        "spearmanCorrelation": -0.4755,
+        "seasonallyAdjusted": false,
+        "confidence": "moderate",
+        "message": null
+      },
+      "seasonality": {
+        "status": "insufficient_data",
+        "monthsUsed": 12,
+        "profile": {},
+        "amplitude": null,
+        "yearToYearProfileCorrelation": null,
+        "detected": false,
+        "peakMonth": null,
+        "troughMonth": null,
+        "yearOverYear": null,
+        "message": "At least 24 consecutive complete months are needed to separate seasonality from trend (have 12)."
+      },
+      "outliers": {
+        "method": "Robust z-score (MAD) of log residuals from a centred 29-day rolling median",
+        "threshold": 3.5,
+        "count": 1,
+        "events": [
+          {
+            "start": "2025-09-28",
+            "end": "2025-09-28",
+            "days": 1,
+            "peakDate": "2025-09-28",
+            "peakViews": 763,
+            "expectedViews": 420,
+            "ratio": 1.82,
+            "excessViews": 343,
+            "kind": "spike"
+          }
+        ],
+        "influence": {
+          "percentChangeWithOutliers": -30.49,
+          "percentChangeWithoutOutliers": -29.86,
+          "trendDirectionWithOutliers": "down",
+          "trendDirectionWithoutOutliers": "down",
+          "normalizedSlopeWithOutliers": -3.703,
+          "normalizedSlopeWithoutOutliers": -3.6046,
+          "trendSurvives": true,
+          "material": false,
+          "summary": "Trend persists after removing 1 spike day(s): change -30.5% with vs -29.9% without; trend down in both."
+        }
+      },
+      "projectNormalized": {
+        "averagePerMillion": 17.489,
+        "baselinePerMillion": 17.686,
+        "latestPerMillion": 13.118,
+        "percentChange": -25.83,
+        "projectPercentChange": -6.29
+      },
+      "evidence": {
+        "strength": "moderate",
+        "score": 3,
+        "reasons": [
+          "100% of expected daily observations are present",
+          "12 complete months analysed",
+          "moderately consistent down trend (R² 0.383, Spearman ρ -0.4755)",
+          "baseline→latest change, log-linear trend agree in direction",
+          "series has low short-term volatility",
+          "Trend persists after removing 1 spike day(s): change -30.5% with vs -29.9% without; trend down in both."
+        ],
+        "warnings": [
+          "baseline and latest windows cover different calendar months, so part of the change may be seasonal"
+        ]
+      },
+      "monthly": [
+        {
+          "month": "2025-09",
+          "views": 12996,
+          "reportedDays": 30,
+          "expectedDays": 30,
+          "averageDailyViews": 433.2,
+          "complete": true
+        },
+        {
+          "month": "2025-10",
+          "views": 11772,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 379.74,
+          "complete": true
+        },
+        {
+          "month": "2025-11",
+          "views": 13764,
+          "reportedDays": 30,
+          "expectedDays": 30,
+          "averageDailyViews": 458.8,
+          "complete": true
+        },
+        {
+          "month": "2025-12",
+          "views": 13518,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 436.06,
+          "complete": true
+        },
+        {
+          "month": "2026-01",
+          "views": 15282,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 492.97,
+          "complete": true
+        },
+        {
+          "month": "2026-02",
+          "views": 12860,
+          "reportedDays": 28,
+          "expectedDays": 28,
+          "averageDailyViews": 459.29,
+          "complete": true
+        },
+        {
+          "month": "2026-03",
+          "views": 13809,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 445.45,
+          "complete": true
+        },
+        {
+          "month": "2026-04",
+          "views": 15101,
+          "reportedDays": 30,
+          "expectedDays": 30,
+          "averageDailyViews": 503.37,
+          "complete": true
+        },
+        {
+          "month": "2026-05",
+          "views": 11767,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 379.58,
+          "complete": true
+        },
+        {
+          "month": "2026-06",
+          "views": 10307,
+          "reportedDays": 30,
+          "expectedDays": 30,
+          "averageDailyViews": 343.57,
+          "complete": true
+        },
+        {
+          "month": "2026-07",
+          "views": 7379,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 238.03,
+          "complete": true
+        },
+        {
+          "month": "2026-08",
+          "views": 9392,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 302.97,
+          "complete": true
+        }
+      ],
+      "daily": [
+        {
+          "date": "2025-09-01",
+          "views": 381
+        },
+        {
+          "date": "2025-09-02",
+          "views": 339
+        },
+        {
+          "date": "2025-09-03",
+          "views": 382
+        },
+        {
+          "date": "2025-09-04",
+          "views": 368
+        },
+        {
+          "date": "2025-09-05",
+          "views": 394
+        },
+        {
+          "date": "2025-09-06",
+          "views": 290
+        },
+        {
+          "date": "2025-09-07",
+          "views": 408
+        },
+        {
+          "date": "2025-09-08",
+          "views": 459
+        },
+        {
+          "date": "2025-09-09",
+          "views": 464
+        },
+        {
+          "date": "2025-09-10",
+          "views": 362
+        },
+        {
+          "date": "2025-09-11",
+          "views": 423
+        },
+        {
+          "date": "2025-09-12",
+          "views": 418
+        },
+        {
+          "date": "2025-09-13",
+          "views": 252
+        },
+        {
+          "date": "2025-09-14",
+          "views": 309
+        },
+        {
+          "date": "2025-09-15",
+          "views": 396
+        },
+        {
+          "date": "2025-09-16",
+          "views": 410
+        },
+        {
+          "date": "2025-09-17",
+          "views": 378
+        },
+        {
+          "date": "2025-09-18",
+          "views": 429
+        },
+        {
+          "date": "2025-09-19",
+          "views": 613
+        },
+        {
+          "date": "2025-09-20",
+          "views": 506
+        },
+        {
+          "date": "2025-09-21",
+          "views": 519
+        },
+        {
+          "date": "2025-09-22",
+          "views": 473
+        },
+        {
+          "date": "2025-09-23",
+          "views": 532
+        },
+        {
+          "date": "2025-09-24",
+          "views": 476
+        },
+        {
+          "date": "2025-09-25",
+          "views": 538
+        },
+        {
+          "date": "2025-09-26",
+          "views": 428
+        },
+        {
+          "date": "2025-09-27",
+          "views": 321
+        },
+        {
+          "date": "2025-09-28",
+          "views": 763
+        },
+        {
+          "date": "2025-09-29",
+          "views": 526
+        },
+        {
+          "date": "2025-09-30",
+          "views": 439
+        },
+        {
+          "date": "2025-10-01",
+          "views": 437
+        },
+        {
+          "date": "2025-10-02",
+          "views": 374
+        },
+        {
+          "date": "2025-10-03",
+          "views": 357
+        },
+        {
+          "date": "2025-10-04",
+          "views": 353
+        },
+        {
+          "date": "2025-10-05",
+          "views": 464
+        },
+        {
+          "date": "2025-10-06",
+          "views": 420
+        },
+        {
+          "date": "2025-10-07",
+          "views": 383
+        },
+        {
+          "date": "2025-10-08",
+          "views": 387
+        },
+        {
+          "date": "2025-10-09",
+          "views": 327
+        },
+        {
+          "date": "2025-10-10",
+          "views": 304
+        },
+        {
+          "date": "2025-10-11",
+          "views": 311
+        },
+        {
+          "date": "2025-10-12",
+          "views": 356
+        },
+        {
+          "date": "2025-10-13",
+          "views": 367
+        },
+        {
+          "date": "2025-10-14",
+          "views": 396
+        },
+        {
+          "date": "2025-10-15",
+          "views": 362
+        },
+        {
+          "date": "2025-10-16",
+          "views": 378
+        },
+        {
+          "date": "2025-10-17",
+          "views": 329
+        },
+        {
+          "date": "2025-10-18",
+          "views": 264
+        },
+        {
+          "date": "2025-10-19",
+          "views": 306
+        },
+        {
+          "date": "2025-10-20",
+          "views": 489
+        },
+        {
+          "date": "2025-10-21",
+          "views": 437
+        },
+        {
+          "date": "2025-10-22",
+          "views": 568
+        },
+        {
+          "date": "2025-10-23",
+          "views": 363
+        },
+        {
+          "date": "2025-10-24",
+          "views": 361
+        },
+        {
+          "date": "2025-10-25",
+          "views": 307
+        },
+        {
+          "date": "2025-10-26",
+          "views": 338
+        },
+        {
+          "date": "2025-10-27",
+          "views": 408
+        },
+        {
+          "date": "2025-10-28",
+          "views": 440
+        },
+        {
+          "date": "2025-10-29",
+          "views": 477
+        },
+        {
+          "date": "2025-10-30",
+          "views": 371
+        },
+        {
+          "date": "2025-10-31",
+          "views": 338
+        },
+        {
+          "date": "2025-11-01",
+          "views": 305
+        },
+        {
+          "date": "2025-11-02",
+          "views": 380
+        },
+        {
+          "date": "2025-11-03",
+          "views": 482
+        },
+        {
+          "date": "2025-11-04",
+          "views": 416
+        },
+        {
+          "date": "2025-11-05",
+          "views": 454
+        },
+        {
+          "date": "2025-11-06",
+          "views": 501
+        },
+        {
+          "date": "2025-11-07",
+          "views": 491
+        },
+        {
+          "date": "2025-11-08",
+          "views": 359
+        },
+        {
+          "date": "2025-11-09",
+          "views": 406
+        },
+        {
+          "date": "2025-11-10",
+          "views": 523
+        },
+        {
+          "date": "2025-11-11",
+          "views": 481
+        },
+        {
+          "date": "2025-11-12",
+          "views": 502
+        },
+        {
+          "date": "2025-11-13",
+          "views": 514
+        },
+        {
+          "date": "2025-11-14",
+          "views": 452
+        },
+        {
+          "date": "2025-11-15",
+          "views": 357
+        },
+        {
+          "date": "2025-11-16",
+          "views": 384
+        },
+        {
+          "date": "2025-11-17",
+          "views": 559
+        },
+        {
+          "date": "2025-11-18",
+          "views": 514
+        },
+        {
+          "date": "2025-11-19",
+          "views": 510
+        },
+        {
+          "date": "2025-11-20",
+          "views": 434
+        },
+        {
+          "date": "2025-11-21",
+          "views": 542
+        },
+        {
+          "date": "2025-11-22",
+          "views": 335
+        },
+        {
+          "date": "2025-11-23",
+          "views": 418
+        },
+        {
+          "date": "2025-11-24",
+          "views": 534
+        },
+        {
+          "date": "2025-11-25",
+          "views": 786
+        },
+        {
+          "date": "2025-11-26",
+          "views": 516
+        },
+        {
+          "date": "2025-11-27",
+          "views": 521
+        },
+        {
+          "date": "2025-11-28",
+          "views": 399
+        },
+        {
+          "date": "2025-11-29",
+          "views": 326
+        },
+        {
+          "date": "2025-11-30",
+          "views": 363
+        },
+        {
+          "date": "2025-12-01",
+          "views": 464
+        },
+        {
+          "date": "2025-12-02",
+          "views": 575
+        },
+        {
+          "date": "2025-12-03",
+          "views": 573
+        },
+        {
+          "date": "2025-12-04",
+          "views": 536
+        },
+        {
+          "date": "2025-12-05",
+          "views": 460
+        },
+        {
+          "date": "2025-12-06",
+          "views": 298
+        },
+        {
+          "date": "2025-12-07",
+          "views": 362
+        },
+        {
+          "date": "2025-12-08",
+          "views": 642
+        },
+        {
+          "date": "2025-12-09",
+          "views": 556
+        },
+        {
+          "date": "2025-12-10",
+          "views": 501
+        },
+        {
+          "date": "2025-12-11",
+          "views": 563
+        },
+        {
+          "date": "2025-12-12",
+          "views": 451
+        },
+        {
+          "date": "2025-12-13",
+          "views": 333
+        },
+        {
+          "date": "2025-12-14",
+          "views": 521
+        },
+        {
+          "date": "2025-12-15",
+          "views": 675
+        },
+        {
+          "date": "2025-12-16",
+          "views": 532
+        },
+        {
+          "date": "2025-12-17",
+          "views": 546
+        },
+        {
+          "date": "2025-12-18",
+          "views": 515
+        },
+        {
+          "date": "2025-12-19",
+          "views": 357
+        },
+        {
+          "date": "2025-12-20",
+          "views": 277
+        },
+        {
+          "date": "2025-12-21",
+          "views": 305
+        },
+        {
+          "date": "2025-12-22",
+          "views": 279
+        },
+        {
+          "date": "2025-12-23",
+          "views": 270
+        },
+        {
+          "date": "2025-12-24",
+          "views": 228
+        },
+        {
+          "date": "2025-12-25",
+          "views": 314
+        },
+        {
+          "date": "2025-12-26",
+          "views": 352
+        },
+        {
+          "date": "2025-12-27",
+          "views": 367
+        },
+        {
+          "date": "2025-12-28",
+          "views": 442
+        },
+        {
+          "date": "2025-12-29",
+          "views": 401
+        },
+        {
+          "date": "2025-12-30",
+          "views": 381
+        },
+        {
+          "date": "2025-12-31",
+          "views": 442
+        },
+        {
+          "date": "2026-01-01",
+          "views": 384
+        },
+        {
+          "date": "2026-01-02",
+          "views": 404
+        },
+        {
+          "date": "2026-01-03",
+          "views": 391
+        },
+        {
+          "date": "2026-01-04",
+          "views": 397
+        },
+        {
+          "date": "2026-01-05",
+          "views": 724
+        },
+        {
+          "date": "2026-01-06",
+          "views": 533
+        },
+        {
+          "date": "2026-01-07",
+          "views": 433
+        },
+        {
+          "date": "2026-01-08",
+          "views": 542
+        },
+        {
+          "date": "2026-01-09",
+          "views": 540
+        },
+        {
+          "date": "2026-01-10",
+          "views": 380
+        },
+        {
+          "date": "2026-01-11",
+          "views": 487
+        },
+        {
+          "date": "2026-01-12",
+          "views": 504
+        },
+        {
+          "date": "2026-01-13",
+          "views": 566
+        },
+        {
+          "date": "2026-01-14",
+          "views": 681
+        },
+        {
+          "date": "2026-01-15",
+          "views": 516
+        },
+        {
+          "date": "2026-01-16",
+          "views": 476
+        },
+        {
+          "date": "2026-01-17",
+          "views": 346
+        },
+        {
+          "date": "2026-01-18",
+          "views": 440
+        },
+        {
+          "date": "2026-01-19",
+          "views": 544
+        },
+        {
+          "date": "2026-01-20",
+          "views": 559
+        },
+        {
+          "date": "2026-01-21",
+          "views": 536
+        },
+        {
+          "date": "2026-01-22",
+          "views": 564
+        },
+        {
+          "date": "2026-01-23",
+          "views": 458
+        },
+        {
+          "date": "2026-01-24",
+          "views": 485
+        },
+        {
+          "date": "2026-01-25",
+          "views": 427
+        },
+        {
+          "date": "2026-01-26",
+          "views": 502
+        },
+        {
+          "date": "2026-01-27",
+          "views": 523
+        },
+        {
+          "date": "2026-01-28",
+          "views": 548
+        },
+        {
+          "date": "2026-01-29",
+          "views": 556
+        },
+        {
+          "date": "2026-01-30",
+          "views": 494
+        },
+        {
+          "date": "2026-01-31",
+          "views": 342
+        },
+        {
+          "date": "2026-02-01",
+          "views": 456
+        },
+        {
+          "date": "2026-02-02",
+          "views": 509
+        },
+        {
+          "date": "2026-02-03",
+          "views": 508
+        },
+        {
+          "date": "2026-02-04",
+          "views": 443
+        },
+        {
+          "date": "2026-02-05",
+          "views": 450
+        },
+        {
+          "date": "2026-02-06",
+          "views": 428
+        },
+        {
+          "date": "2026-02-07",
+          "views": 354
+        },
+        {
+          "date": "2026-02-08",
+          "views": 468
+        },
+        {
+          "date": "2026-02-09",
+          "views": 513
+        },
+        {
+          "date": "2026-02-10",
+          "views": 505
+        },
+        {
+          "date": "2026-02-11",
+          "views": 597
+        },
+        {
+          "date": "2026-02-12",
+          "views": 452
+        },
+        {
+          "date": "2026-02-13",
+          "views": 373
+        },
+        {
+          "date": "2026-02-14",
+          "views": 313
+        },
+        {
+          "date": "2026-02-15",
+          "views": 362
+        },
+        {
+          "date": "2026-02-16",
+          "views": 368
+        },
+        {
+          "date": "2026-02-17",
+          "views": 404
+        },
+        {
+          "date": "2026-02-18",
+          "views": 392
+        },
+        {
+          "date": "2026-02-19",
+          "views": 489
+        },
+        {
+          "date": "2026-02-20",
+          "views": 423
+        },
+        {
+          "date": "2026-02-21",
+          "views": 347
+        },
+        {
+          "date": "2026-02-22",
+          "views": 503
+        },
+        {
+          "date": "2026-02-23",
+          "views": 480
+        },
+        {
+          "date": "2026-02-24",
+          "views": 524
+        },
+        {
+          "date": "2026-02-25",
+          "views": 556
+        },
+        {
+          "date": "2026-02-26",
+          "views": 597
+        },
+        {
+          "date": "2026-02-27",
+          "views": 598
+        },
+        {
+          "date": "2026-02-28",
+          "views": 448
+        },
+        {
+          "date": "2026-03-01",
+          "views": 451
+        },
+        {
+          "date": "2026-03-02",
+          "views": 592
+        },
+        {
+          "date": "2026-03-03",
+          "views": 570
+        },
+        {
+          "date": "2026-03-04",
+          "views": 455
+        },
+        {
+          "date": "2026-03-05",
+          "views": 537
+        },
+        {
+          "date": "2026-03-06",
+          "views": 385
+        },
+        {
+          "date": "2026-03-07",
+          "views": 487
+        },
+        {
+          "date": "2026-03-08",
+          "views": 365
+        },
+        {
+          "date": "2026-03-09",
+          "views": 485
+        },
+        {
+          "date": "2026-03-10",
+          "views": 534
+        },
+        {
+          "date": "2026-03-11",
+          "views": 559
+        },
+        {
+          "date": "2026-03-12",
+          "views": 481
+        },
+        {
+          "date": "2026-03-13",
+          "views": 534
+        },
+        {
+          "date": "2026-03-14",
+          "views": 321
+        },
+        {
+          "date": "2026-03-15",
+          "views": 389
+        },
+        {
+          "date": "2026-03-16",
+          "views": 518
+        },
+        {
+          "date": "2026-03-17",
+          "views": 450
+        },
+        {
+          "date": "2026-03-18",
+          "views": 498
+        },
+        {
+          "date": "2026-03-19",
+          "views": 448
+        },
+        {
+          "date": "2026-03-20",
+          "views": 455
+        },
+        {
+          "date": "2026-03-21",
+          "views": 346
+        },
+        {
+          "date": "2026-03-22",
+          "views": 351
+        },
+        {
+          "date": "2026-03-23",
+          "views": 440
+        },
+        {
+          "date": "2026-03-24",
+          "views": 430
+        },
+        {
+          "date": "2026-03-25",
+          "views": 396
+        },
+        {
+          "date": "2026-03-26",
+          "views": 468
+        },
+        {
+          "date": "2026-03-27",
+          "views": 376
+        },
+        {
+          "date": "2026-03-28",
+          "views": 300
+        },
+        {
+          "date": "2026-03-29",
+          "views": 411
+        },
+        {
+          "date": "2026-03-30",
+          "views": 401
+        },
+        {
+          "date": "2026-03-31",
+          "views": 376
+        },
+        {
+          "date": "2026-04-01",
+          "views": 468
+        },
+        {
+          "date": "2026-04-02",
+          "views": 416
+        },
+        {
+          "date": "2026-04-03",
+          "views": 376
+        },
+        {
+          "date": "2026-04-04",
+          "views": 450
+        },
+        {
+          "date": "2026-04-05",
+          "views": 475
+        },
+        {
+          "date": "2026-04-06",
+          "views": 654
+        },
+        {
+          "date": "2026-04-07",
+          "views": 602
+        },
+        {
+          "date": "2026-04-08",
+          "views": 584
+        },
+        {
+          "date": "2026-04-09",
+          "views": 513
+        },
+        {
+          "date": "2026-04-10",
+          "views": 529
+        },
+        {
+          "date": "2026-04-11",
+          "views": 538
+        },
+        {
+          "date": "2026-04-12",
+          "views": 536
+        },
+        {
+          "date": "2026-04-13",
+          "views": 617
+        },
+        {
+          "date": "2026-04-14",
+          "views": 558
+        },
+        {
+          "date": "2026-04-15",
+          "views": 537
+        },
+        {
+          "date": "2026-04-16",
+          "views": 534
+        },
+        {
+          "date": "2026-04-17",
+          "views": 442
+        },
+        {
+          "date": "2026-04-18",
+          "views": 396
+        },
+        {
+          "date": "2026-04-19",
+          "views": 412
+        },
+        {
+          "date": "2026-04-20",
+          "views": 580
+        },
+        {
+          "date": "2026-04-21",
+          "views": 546
+        },
+        {
+          "date": "2026-04-22",
+          "views": 540
+        },
+        {
+          "date": "2026-04-23",
+          "views": 514
+        },
+        {
+          "date": "2026-04-24",
+          "views": 490
+        },
+        {
+          "date": "2026-04-25",
+          "views": 377
+        },
+        {
+          "date": "2026-04-26",
+          "views": 383
+        },
+        {
+          "date": "2026-04-27",
+          "views": 507
+        },
+        {
+          "date": "2026-04-28",
+          "views": 471
+        },
+        {
+          "date": "2026-04-29",
+          "views": 539
+        },
+        {
+          "date": "2026-04-30",
+          "views": 517
+        },
+        {
+          "date": "2026-05-01",
+          "views": 299
+        },
+        {
+          "date": "2026-05-02",
+          "views": 342
+        },
+        {
+          "date": "2026-05-03",
+          "views": 342
+        },
+        {
+          "date": "2026-05-04",
+          "views": 523
+        },
+        {
+          "date": "2026-05-05",
+          "views": 469
+        },
+        {
+          "date": "2026-05-06",
+          "views": 589
+        },
+        {
+          "date": "2026-05-07",
+          "views": 431
+        },
+        {
+          "date": "2026-05-08",
+          "views": 418
+        },
+        {
+          "date": "2026-05-09",
+          "views": 259
+        },
+        {
+          "date": "2026-05-10",
+          "views": 334
+        },
+        {
+          "date": "2026-05-11",
+          "views": 468
+        },
+        {
+          "date": "2026-05-12",
+          "views": 469
+        },
+        {
+          "date": "2026-05-13",
+          "views": 429
+        },
+        {
+          "date": "2026-05-14",
+          "views": 299
+        },
+        {
+          "date": "2026-05-15",
+          "views": 245
+        },
+        {
+          "date": "2026-05-16",
+          "views": 273
+        },
+        {
+          "date": "2026-05-17",
+          "views": 298
+        },
+        {
+          "date": "2026-05-18",
+          "views": 550
+        },
+        {
+          "date": "2026-05-19",
+          "views": 456
+        },
+        {
+          "date": "2026-05-20",
+          "views": 449
+        },
+        {
+          "date": "2026-05-21",
+          "views": 448
+        },
+        {
+          "date": "2026-05-22",
+          "views": 360
+        },
+        {
+          "date": "2026-05-23",
+          "views": 236
+        },
+        {
+          "date": "2026-05-24",
+          "views": 293
+        },
+        {
+          "date": "2026-05-25",
+          "views": 324
+        },
+        {
+          "date": "2026-05-26",
+          "views": 373
+        },
+        {
+          "date": "2026-05-27",
+          "views": 439
+        },
+        {
+          "date": "2026-05-28",
+          "views": 476
+        },
+        {
+          "date": "2026-05-29",
+          "views": 326
+        },
+        {
+          "date": "2026-05-30",
+          "views": 273
+        },
+        {
+          "date": "2026-05-31",
+          "views": 277
+        },
+        {
+          "date": "2026-06-01",
+          "views": 366
+        },
+        {
+          "date": "2026-06-02",
+          "views": 431
+        },
+        {
+          "date": "2026-06-03",
+          "views": 383
+        },
+        {
+          "date": "2026-06-04",
+          "views": 301
+        },
+        {
+          "date": "2026-06-05",
+          "views": 320
+        },
+        {
+          "date": "2026-06-06",
+          "views": 276
+        },
+        {
+          "date": "2026-06-07",
+          "views": 302
+        },
+        {
+          "date": "2026-06-08",
+          "views": 496
+        },
+        {
+          "date": "2026-06-09",
+          "views": 450
+        },
+        {
+          "date": "2026-06-10",
+          "views": 439
+        },
+        {
+          "date": "2026-06-11",
+          "views": 402
+        },
+        {
+          "date": "2026-06-12",
+          "views": 447
+        },
+        {
+          "date": "2026-06-13",
+          "views": 262
+        },
+        {
+          "date": "2026-06-14",
+          "views": 253
+        },
+        {
+          "date": "2026-06-15",
+          "views": 401
+        },
+        {
+          "date": "2026-06-16",
+          "views": 388
+        },
+        {
+          "date": "2026-06-17",
+          "views": 412
+        },
+        {
+          "date": "2026-06-18",
+          "views": 421
+        },
+        {
+          "date": "2026-06-19",
+          "views": 331
+        },
+        {
+          "date": "2026-06-20",
+          "views": 214
+        },
+        {
+          "date": "2026-06-21",
+          "views": 267
+        },
+        {
+          "date": "2026-06-22",
+          "views": 408
+        },
+        {
+          "date": "2026-06-23",
+          "views": 333
+        },
+        {
+          "date": "2026-06-24",
+          "views": 352
+        },
+        {
+          "date": "2026-06-25",
+          "views": 320
+        },
+        {
+          "date": "2026-06-26",
+          "views": 270
+        },
+        {
+          "date": "2026-06-27",
+          "views": 207
+        },
+        {
+          "date": "2026-06-28",
+          "views": 275
+        },
+        {
+          "date": "2026-06-29",
+          "views": 315
+        },
+        {
+          "date": "2026-06-30",
+          "views": 265
+        },
+        {
+          "date": "2026-07-01",
+          "views": 257
+        },
+        {
+          "date": "2026-07-02",
+          "views": 235
+        },
+        {
+          "date": "2026-07-03",
+          "views": 237
+        },
+        {
+          "date": "2026-07-04",
+          "views": 213
+        },
+        {
+          "date": "2026-07-05",
+          "views": 201
+        },
+        {
+          "date": "2026-07-06",
+          "views": 264
+        },
+        {
+          "date": "2026-07-07",
+          "views": 275
+        },
+        {
+          "date": "2026-07-08",
+          "views": 269
+        },
+        {
+          "date": "2026-07-09",
+          "views": 225
+        },
+        {
+          "date": "2026-07-10",
+          "views": 227
+        },
+        {
+          "date": "2026-07-11",
+          "views": 252
+        },
+        {
+          "date": "2026-07-12",
+          "views": 244
+        },
+        {
+          "date": "2026-07-13",
+          "views": 258
+        },
+        {
+          "date": "2026-07-14",
+          "views": 234
+        },
+        {
+          "date": "2026-07-15",
+          "views": 225
+        },
+        {
+          "date": "2026-07-16",
+          "views": 196
+        },
+        {
+          "date": "2026-07-17",
+          "views": 237
+        },
+        {
+          "date": "2026-07-18",
+          "views": 199
+        },
+        {
+          "date": "2026-07-19",
+          "views": 196
+        },
+        {
+          "date": "2026-07-20",
+          "views": 270
+        },
+        {
+          "date": "2026-07-21",
+          "views": 262
+        },
+        {
+          "date": "2026-07-22",
+          "views": 258
+        },
+        {
+          "date": "2026-07-23",
+          "views": 272
+        },
+        {
+          "date": "2026-07-24",
+          "views": 229
+        },
+        {
+          "date": "2026-07-25",
+          "views": 240
+        },
+        {
+          "date": "2026-07-26",
+          "views": 231
+        },
+        {
+          "date": "2026-07-27",
+          "views": 250
+        },
+        {
+          "date": "2026-07-28",
+          "views": 229
+        },
+        {
+          "date": "2026-07-29",
+          "views": 256
+        },
+        {
+          "date": "2026-07-30",
+          "views": 214
+        },
+        {
+          "date": "2026-07-31",
+          "views": 224
+        },
+        {
+          "date": "2026-08-01",
+          "views": 250
+        },
+        {
+          "date": "2026-08-02",
+          "views": 281
+        },
+        {
+          "date": "2026-08-03",
+          "views": 297
+        },
+        {
+          "date": "2026-08-04",
+          "views": 267
+        },
+        {
+          "date": "2026-08-05",
+          "views": 239
+        },
+        {
+          "date": "2026-08-06",
+          "views": 257
+        },
+        {
+          "date": "2026-08-07",
+          "views": 213
+        },
+        {
+          "date": "2026-08-08",
+          "views": 243
+        },
+        {
+          "date": "2026-08-09",
+          "views": 295
+        },
+        {
+          "date": "2026-08-10",
+          "views": 227
+        },
+        {
+          "date": "2026-08-11",
+          "views": 307
+        },
+        {
+          "date": "2026-08-12",
+          "views": 488
+        },
+        {
+          "date": "2026-08-13",
+          "views": 422
+        },
+        {
+          "date": "2026-08-14",
+          "views": 331
+        },
+        {
+          "date": "2026-08-15",
+          "views": 294
+        },
+        {
+          "date": "2026-08-16",
+          "views": 284
+        },
+        {
+          "date": "2026-08-17",
+          "views": 316
+        },
+        {
+          "date": "2026-08-18",
+          "views": 316
+        },
+        {
+          "date": "2026-08-19",
+          "views": 293
+        },
+        {
+          "date": "2026-08-20",
+          "views": 265
+        },
+        {
+          "date": "2026-08-21",
+          "views": 279
+        },
+        {
+          "date": "2026-08-22",
+          "views": 337
+        },
+        {
+          "date": "2026-08-23",
+          "views": 333
+        },
+        {
+          "date": "2026-08-24",
+          "views": 379
+        },
+        {
+          "date": "2026-08-25",
+          "views": 375
+        },
+        {
+          "date": "2026-08-26",
+          "views": 317
+        },
+        {
+          "date": "2026-08-27",
+          "views": 303
+        },
+        {
+          "date": "2026-08-28",
+          "views": 307
+        },
+        {
+          "date": "2026-08-29",
+          "views": 203
+        },
+        {
+          "date": "2026-08-30",
+          "views": 268
+        },
+        {
+          "date": "2026-08-31",
+          "views": 406
+        }
+      ]
+    },
+    "fr": {
+      "language": "fr",
+      "project": "fr.wikipedia",
+      "articleTitle": "Mercure (planète)",
+      "articleUrl": "https://fr.wikipedia.org/wiki/Mercure_(plan%C3%A8te)",
+      "status": "analyzed",
+      "data": {
+        "expectedDays": 365,
+        "reportedDays": 365,
+        "missingDays": 0,
+        "excludedDays": 0,
+        "completeness": 1,
+        "missingRanges": [],
+        "excludedRanges": [],
+        "issues": [],
+        "noViewsRecorded": false,
+        "missingTreatedAsZero": false
+      },
+      "metrics": {
+        "totalViews": 103163,
+        "averageDailyViews": 282.64,
+        "medianDailyViews": 282,
+        "baseline": {
+          "label": "first 3 complete months (Sep 2025–Nov 2025)",
+          "start": "2025-09-01",
+          "end": "2025-11-30",
+          "averageDailyViews": 321.11
+        },
+        "latest": {
+          "label": "last 3 complete months (Jun 2026–Aug 2026)",
+          "start": "2026-06-01",
+          "end": "2026-08-31",
+          "averageDailyViews": 214.68
+        },
+        "absoluteChange": -106.43,
+        "percentChange": -33.14,
+        "annualizedGrowth": {
+          "percent": -35.44,
+          "method": "Trend-implied annual rate from the log-linear monthly fit: (1 + monthly rate)^12 − 1",
+          "note": "Descriptive rate for the analysed period, not a forecast."
+        },
+        "peak": {
+          "date": "2025-09-24",
+          "views": 624
+        },
+        "volatility": {
+          "dailyCoefficientOfVariation": 0.2567,
+          "shortTermVolatility": 0.158,
+          "monthlyCoefficientOfVariation": 0.164,
+          "level": "low"
+        }
+      },
+      "trend": {
+        "status": "ok",
+        "granularity": "month",
+        "observations": 12,
+        "direction": "down",
+        "slope": -9.4777,
+        "normalizedSlope": -3.5809,
+        "rSquared": 0.4908,
+        "linearRSquared": 0.497,
+        "spearmanCorrelation": -0.6993,
+        "seasonallyAdjusted": false,
+        "confidence": "moderate",
+        "message": null
+      },
+      "seasonality": {
+        "status": "insufficient_data",
+        "monthsUsed": 12,
+        "profile": {},
+        "amplitude": null,
+        "yearToYearProfileCorrelation": null,
+        "detected": false,
+        "peakMonth": null,
+        "troughMonth": null,
+        "yearOverYear": null,
+        "message": "At least 24 consecutive complete months are needed to separate seasonality from trend (have 12)."
+      },
+      "outliers": {
+        "method": "Robust z-score (MAD) of log residuals from a centred 29-day rolling median",
+        "threshold": 3.5,
+        "count": 1,
+        "events": [
+          {
+            "start": "2026-08-12",
+            "end": "2026-08-12",
+            "days": 1,
+            "peakDate": "2026-08-12",
+            "peakViews": 427,
+            "expectedViews": 225,
+            "ratio": 1.9,
+            "excessViews": 202,
+            "kind": "spike"
+          }
+        ],
+        "influence": {
+          "percentChangeWithOutliers": -33.14,
+          "percentChangeWithoutOutliers": -33.87,
+          "trendDirectionWithOutliers": "down",
+          "trendDirectionWithoutOutliers": "down",
+          "normalizedSlopeWithOutliers": -3.5809,
+          "normalizedSlopeWithoutOutliers": -3.6912,
+          "trendSurvives": true,
+          "material": false,
+          "summary": "Trend persists after removing 1 spike day(s): change -33.1% with vs -33.9% without; trend down in both."
+        }
+      },
+      "projectNormalized": {
+        "averagePerMillion": 14.465,
+        "baselinePerMillion": 15.982,
+        "latestPerMillion": 11.593,
+        "percentChange": -27.46,
+        "projectPercentChange": -7.83
+      },
+      "evidence": {
+        "strength": "moderate",
+        "score": 3,
+        "reasons": [
+          "100% of expected daily observations are present",
+          "12 complete months analysed",
+          "moderately consistent down trend (R² 0.4908, Spearman ρ -0.6993)",
+          "baseline→latest change, log-linear trend agree in direction",
+          "series has low short-term volatility",
+          "Trend persists after removing 1 spike day(s): change -33.1% with vs -33.9% without; trend down in both."
+        ],
+        "warnings": [
+          "baseline and latest windows cover different calendar months, so part of the change may be seasonal"
+        ]
+      },
+      "monthly": [
+        {
+          "month": "2025-09",
+          "views": 10127,
+          "reportedDays": 30,
+          "expectedDays": 30,
+          "averageDailyViews": 337.57,
+          "complete": true
+        },
+        {
+          "month": "2025-10",
+          "views": 9296,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 299.87,
+          "complete": true
+        },
+        {
+          "month": "2025-11",
+          "views": 9798,
+          "reportedDays": 30,
+          "expectedDays": 30,
+          "averageDailyViews": 326.6,
+          "complete": true
+        },
+        {
+          "month": "2025-12",
+          "views": 8118,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 261.87,
+          "complete": true
+        },
+        {
+          "month": "2026-01",
+          "views": 9940,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 320.65,
+          "complete": true
+        },
+        {
+          "month": "2026-02",
+          "views": 8002,
+          "reportedDays": 28,
+          "expectedDays": 28,
+          "averageDailyViews": 285.79,
+          "complete": true
+        },
+        {
+          "month": "2026-03",
+          "views": 8945,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 288.55,
+          "complete": true
+        },
+        {
+          "month": "2026-04",
+          "views": 10084,
+          "reportedDays": 30,
+          "expectedDays": 30,
+          "averageDailyViews": 336.13,
+          "complete": true
+        },
+        {
+          "month": "2026-05",
+          "views": 9102,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 293.61,
+          "complete": true
+        },
+        {
+          "month": "2026-06",
+          "views": 7157,
+          "reportedDays": 30,
+          "expectedDays": 30,
+          "averageDailyViews": 238.57,
+          "complete": true
+        },
+        {
+          "month": "2026-07",
+          "views": 5566,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 179.55,
+          "complete": true
+        },
+        {
+          "month": "2026-08",
+          "views": 7028,
+          "reportedDays": 31,
+          "expectedDays": 31,
+          "averageDailyViews": 226.71,
+          "complete": true
+        }
+      ],
+      "daily": [
+        {
+          "date": "2025-09-01",
+          "views": 229
+        },
+        {
+          "date": "2025-09-02",
+          "views": 271
+        },
+        {
+          "date": "2025-09-03",
+          "views": 225
+        },
+        {
+          "date": "2025-09-04",
+          "views": 249
+        },
+        {
+          "date": "2025-09-05",
+          "views": 287
+        },
+        {
+          "date": "2025-09-06",
+          "views": 282
+        },
+        {
+          "date": "2025-09-07",
+          "views": 285
+        },
+        {
+          "date": "2025-09-08",
+          "views": 331
+        },
+        {
+          "date": "2025-09-09",
+          "views": 332
+        },
+        {
+          "date": "2025-09-10",
+          "views": 402
+        },
+        {
+          "date": "2025-09-11",
+          "views": 423
+        },
+        {
+          "date": "2025-09-12",
+          "views": 395
+        },
+        {
+          "date": "2025-09-13",
+          "views": 255
+        },
+        {
+          "date": "2025-09-14",
+          "views": 332
+        },
+        {
+          "date": "2025-09-15",
+          "views": 362
+        },
+        {
+          "date": "2025-09-16",
+          "views": 310
+        },
+        {
+          "date": "2025-09-17",
+          "views": 312
+        },
+        {
+          "date": "2025-09-18",
+          "views": 361
+        },
+        {
+          "date": "2025-09-19",
+          "views": 291
+        },
+        {
+          "date": "2025-09-20",
+          "views": 268
+        },
+        {
+          "date": "2025-09-21",
+          "views": 350
+        },
+        {
+          "date": "2025-09-22",
+          "views": 421
+        },
+        {
+          "date": "2025-09-23",
+          "views": 385
+        },
+        {
+          "date": "2025-09-24",
+          "views": 624
+        },
+        {
+          "date": "2025-09-25",
+          "views": 380
+        },
+        {
+          "date": "2025-09-26",
+          "views": 322
+        },
+        {
+          "date": "2025-09-27",
+          "views": 264
+        },
+        {
+          "date": "2025-09-28",
+          "views": 317
+        },
+        {
+          "date": "2025-09-29",
+          "views": 484
+        },
+        {
+          "date": "2025-09-30",
+          "views": 378
+        },
+        {
+          "date": "2025-10-01",
+          "views": 344
+        },
+        {
+          "date": "2025-10-02",
+          "views": 357
+        },
+        {
+          "date": "2025-10-03",
+          "views": 365
+        },
+        {
+          "date": "2025-10-04",
+          "views": 282
+        },
+        {
+          "date": "2025-10-05",
+          "views": 321
+        },
+        {
+          "date": "2025-10-06",
+          "views": 461
+        },
+        {
+          "date": "2025-10-07",
+          "views": 362
+        },
+        {
+          "date": "2025-10-08",
+          "views": 407
+        },
+        {
+          "date": "2025-10-09",
+          "views": 357
+        },
+        {
+          "date": "2025-10-10",
+          "views": 312
+        },
+        {
+          "date": "2025-10-11",
+          "views": 255
+        },
+        {
+          "date": "2025-10-12",
+          "views": 297
+        },
+        {
+          "date": "2025-10-13",
+          "views": 250
+        },
+        {
+          "date": "2025-10-14",
+          "views": 336
+        },
+        {
+          "date": "2025-10-15",
+          "views": 290
+        },
+        {
+          "date": "2025-10-16",
+          "views": 285
+        },
+        {
+          "date": "2025-10-17",
+          "views": 248
+        },
+        {
+          "date": "2025-10-18",
+          "views": 231
+        },
+        {
+          "date": "2025-10-19",
+          "views": 293
+        },
+        {
+          "date": "2025-10-20",
+          "views": 266
+        },
+        {
+          "date": "2025-10-21",
+          "views": 230
+        },
+        {
+          "date": "2025-10-22",
+          "views": 269
+        },
+        {
+          "date": "2025-10-23",
+          "views": 284
+        },
+        {
+          "date": "2025-10-24",
+          "views": 246
+        },
+        {
+          "date": "2025-10-25",
+          "views": 238
+        },
+        {
+          "date": "2025-10-26",
+          "views": 253
+        },
+        {
+          "date": "2025-10-27",
+          "views": 265
+        },
+        {
+          "date": "2025-10-28",
+          "views": 360
+        },
+        {
+          "date": "2025-10-29",
+          "views": 333
+        },
+        {
+          "date": "2025-10-30",
+          "views": 293
+        },
+        {
+          "date": "2025-10-31",
+          "views": 206
+        },
+        {
+          "date": "2025-11-01",
+          "views": 254
+        },
+        {
+          "date": "2025-11-02",
+          "views": 355
+        },
+        {
+          "date": "2025-11-03",
+          "views": 346
+        },
+        {
+          "date": "2025-11-04",
+          "views": 398
+        },
+        {
+          "date": "2025-11-05",
+          "views": 348
+        },
+        {
+          "date": "2025-11-06",
+          "views": 344
+        },
+        {
+          "date": "2025-11-07",
+          "views": 350
+        },
+        {
+          "date": "2025-11-08",
+          "views": 275
+        },
+        {
+          "date": "2025-11-09",
+          "views": 313
+        },
+        {
+          "date": "2025-11-10",
+          "views": 353
+        },
+        {
+          "date": "2025-11-11",
+          "views": 307
+        },
+        {
+          "date": "2025-11-12",
+          "views": 292
+        },
+        {
+          "date": "2025-11-13",
+          "views": 329
+        },
+        {
+          "date": "2025-11-14",
+          "views": 322
+        },
+        {
+          "date": "2025-11-15",
+          "views": 300
+        },
+        {
+          "date": "2025-11-16",
+          "views": 370
+        },
+        {
+          "date": "2025-11-17",
+          "views": 459
+        },
+        {
+          "date": "2025-11-18",
+          "views": 399
+        },
+        {
+          "date": "2025-11-19",
+          "views": 381
+        },
+        {
+          "date": "2025-11-20",
+          "views": 298
+        },
+        {
+          "date": "2025-11-21",
+          "views": 262
+        },
+        {
+          "date": "2025-11-22",
+          "views": 250
+        },
+        {
+          "date": "2025-11-23",
+          "views": 310
+        },
+        {
+          "date": "2025-11-24",
+          "views": 350
+        },
+        {
+          "date": "2025-11-25",
+          "views": 336
+        },
+        {
+          "date": "2025-11-26",
+          "views": 357
+        },
+        {
+          "date": "2025-11-27",
+          "views": 311
+        },
+        {
+          "date": "2025-11-28",
+          "views": 330
+        },
+        {
+          "date": "2025-11-29",
+          "views": 232
+        },
+        {
+          "date": "2025-11-30",
+          "views": 267
+        },
+        {
+          "date": "2025-12-01",
+          "views": 345
+        },
+        {
+          "date": "2025-12-02",
+          "views": 386
+        },
+        {
+          "date": "2025-12-03",
+          "views": 315
+        },
+        {
+          "date": "2025-12-04",
+          "views": 311
+        },
+        {
+          "date": "2025-12-05",
+          "views": 284
+        },
+        {
+          "date": "2025-12-06",
+          "views": 239
+        },
+        {
+          "date": "2025-12-07",
+          "views": 265
+        },
+        {
+          "date": "2025-12-08",
+          "views": 289
+        },
+        {
+          "date": "2025-12-09",
+          "views": 284
+        },
+        {
+          "date": "2025-12-10",
+          "views": 279
+        },
+        {
+          "date": "2025-12-11",
+          "views": 320
+        },
+        {
+          "date": "2025-12-12",
+          "views": 258
+        },
+        {
+          "date": "2025-12-13",
+          "views": 195
+        },
+        {
+          "date": "2025-12-14",
+          "views": 270
+        },
+        {
+          "date": "2025-12-15",
+          "views": 272
+        },
+        {
+          "date": "2025-12-16",
+          "views": 291
+        },
+        {
+          "date": "2025-12-17",
+          "views": 251
+        },
+        {
+          "date": "2025-12-18",
+          "views": 272
+        },
+        {
+          "date": "2025-12-19",
+          "views": 204
+        },
+        {
+          "date": "2025-12-20",
+          "views": 277
+        },
+        {
+          "date": "2025-12-21",
+          "views": 256
+        },
+        {
+          "date": "2025-12-22",
+          "views": 194
+        },
+        {
+          "date": "2025-12-23",
+          "views": 159
+        },
+        {
+          "date": "2025-12-24",
+          "views": 179
+        },
+        {
+          "date": "2025-12-25",
+          "views": 198
+        },
+        {
+          "date": "2025-12-26",
+          "views": 245
+        },
+        {
+          "date": "2025-12-27",
+          "views": 266
+        },
+        {
+          "date": "2025-12-28",
+          "views": 262
+        },
+        {
+          "date": "2025-12-29",
+          "views": 283
+        },
+        {
+          "date": "2025-12-30",
+          "views": 240
+        },
+        {
+          "date": "2025-12-31",
+          "views": 229
+        },
+        {
+          "date": "2026-01-01",
+          "views": 230
+        },
+        {
+          "date": "2026-01-02",
+          "views": 314
+        },
+        {
+          "date": "2026-01-03",
+          "views": 286
+        },
+        {
+          "date": "2026-01-04",
+          "views": 251
+        },
+        {
+          "date": "2026-01-05",
+          "views": 297
+        },
+        {
+          "date": "2026-01-06",
+          "views": 281
+        },
+        {
+          "date": "2026-01-07",
+          "views": 291
+        },
+        {
+          "date": "2026-01-08",
+          "views": 326
+        },
+        {
+          "date": "2026-01-09",
+          "views": 323
+        },
+        {
+          "date": "2026-01-10",
+          "views": 306
+        },
+        {
+          "date": "2026-01-11",
+          "views": 308
+        },
+        {
+          "date": "2026-01-12",
+          "views": 351
+        },
+        {
+          "date": "2026-01-13",
+          "views": 470
+        },
+        {
+          "date": "2026-01-14",
+          "views": 347
+        },
+        {
+          "date": "2026-01-15",
+          "views": 347
+        },
+        {
+          "date": "2026-01-16",
+          "views": 299
+        },
+        {
+          "date": "2026-01-17",
+          "views": 257
+        },
+        {
+          "date": "2026-01-18",
+          "views": 296
+        },
+        {
+          "date": "2026-01-19",
+          "views": 468
+        },
+        {
+          "date": "2026-01-20",
+          "views": 303
+        },
+        {
+          "date": "2026-01-21",
+          "views": 337
+        },
+        {
+          "date": "2026-01-22",
+          "views": 302
+        },
+        {
+          "date": "2026-01-23",
+          "views": 312
+        },
+        {
+          "date": "2026-01-24",
+          "views": 237
+        },
+        {
+          "date": "2026-01-25",
+          "views": 308
+        },
+        {
+          "date": "2026-01-26",
+          "views": 351
+        },
+        {
+          "date": "2026-01-27",
+          "views": 416
+        },
+        {
+          "date": "2026-01-28",
+          "views": 358
+        },
+        {
+          "date": "2026-01-29",
+          "views": 429
+        },
+        {
+          "date": "2026-01-30",
+          "views": 243
+        },
+        {
+          "date": "2026-01-31",
+          "views": 296
+        },
+        {
+          "date": "2026-02-01",
+          "views": 322
+        },
+        {
+          "date": "2026-02-02",
+          "views": 412
+        },
+        {
+          "date": "2026-02-03",
+          "views": 356
+        },
+        {
+          "date": "2026-02-04",
+          "views": 336
+        },
+        {
+          "date": "2026-02-05",
+          "views": 394
+        },
+        {
+          "date": "2026-02-06",
+          "views": 283
+        },
+        {
+          "date": "2026-02-07",
+          "views": 225
+        },
+        {
+          "date": "2026-02-08",
+          "views": 232
+        },
+        {
+          "date": "2026-02-09",
+          "views": 350
+        },
+        {
+          "date": "2026-02-10",
+          "views": 273
+        },
+        {
+          "date": "2026-02-11",
+          "views": 298
+        },
+        {
+          "date": "2026-02-12",
+          "views": 330
+        },
+        {
+          "date": "2026-02-13",
+          "views": 271
+        },
+        {
+          "date": "2026-02-14",
+          "views": 215
+        },
+        {
+          "date": "2026-02-15",
+          "views": 275
+        },
+        {
+          "date": "2026-02-16",
+          "views": 250
+        },
+        {
+          "date": "2026-02-17",
+          "views": 352
+        },
+        {
+          "date": "2026-02-18",
+          "views": 326
+        },
+        {
+          "date": "2026-02-19",
+          "views": 262
+        },
+        {
+          "date": "2026-02-20",
+          "views": 256
+        },
+        {
+          "date": "2026-02-21",
+          "views": 175
+        },
+        {
+          "date": "2026-02-22",
+          "views": 213
+        },
+        {
+          "date": "2026-02-23",
+          "views": 311
+        },
+        {
+          "date": "2026-02-24",
+          "views": 228
+        },
+        {
+          "date": "2026-02-25",
+          "views": 251
+        },
+        {
+          "date": "2026-02-26",
+          "views": 306
+        },
+        {
+          "date": "2026-02-27",
+          "views": 276
+        },
+        {
+          "date": "2026-02-28",
+          "views": 224
+        },
+        {
+          "date": "2026-03-01",
+          "views": 257
+        },
+        {
+          "date": "2026-03-02",
+          "views": 340
+        },
+        {
+          "date": "2026-03-03",
+          "views": 275
+        },
+        {
+          "date": "2026-03-04",
+          "views": 260
+        },
+        {
+          "date": "2026-03-05",
+          "views": 304
+        },
+        {
+          "date": "2026-03-06",
+          "views": 289
+        },
+        {
+          "date": "2026-03-07",
+          "views": 195
+        },
+        {
+          "date": "2026-03-08",
+          "views": 237
+        },
+        {
+          "date": "2026-03-09",
+          "views": 276
+        },
+        {
+          "date": "2026-03-10",
+          "views": 303
+        },
+        {
+          "date": "2026-03-11",
+          "views": 307
+        },
+        {
+          "date": "2026-03-12",
+          "views": 310
+        },
+        {
+          "date": "2026-03-13",
+          "views": 242
+        },
+        {
+          "date": "2026-03-14",
+          "views": 230
+        },
+        {
+          "date": "2026-03-15",
+          "views": 255
+        },
+        {
+          "date": "2026-03-16",
+          "views": 306
+        },
+        {
+          "date": "2026-03-17",
+          "views": 390
+        },
+        {
+          "date": "2026-03-18",
+          "views": 345
+        },
+        {
+          "date": "2026-03-19",
+          "views": 336
+        },
+        {
+          "date": "2026-03-20",
+          "views": 256
+        },
+        {
+          "date": "2026-03-21",
+          "views": 366
+        },
+        {
+          "date": "2026-03-22",
+          "views": 239
+        },
+        {
+          "date": "2026-03-23",
+          "views": 313
+        },
+        {
+          "date": "2026-03-24",
+          "views": 298
+        },
+        {
+          "date": "2026-03-25",
+          "views": 295
+        },
+        {
+          "date": "2026-03-26",
+          "views": 296
+        },
+        {
+          "date": "2026-03-27",
+          "views": 286
+        },
+        {
+          "date": "2026-03-28",
+          "views": 250
+        },
+        {
+          "date": "2026-03-29",
+          "views": 271
+        },
+        {
+          "date": "2026-03-30",
+          "views": 308
+        },
+        {
+          "date": "2026-03-31",
+          "views": 310
+        },
+        {
+          "date": "2026-04-01",
+          "views": 294
+        },
+        {
+          "date": "2026-04-02",
+          "views": 305
+        },
+        {
+          "date": "2026-04-03",
+          "views": 281
+        },
+        {
+          "date": "2026-04-04",
+          "views": 258
+        },
+        {
+          "date": "2026-04-05",
+          "views": 248
+        },
+        {
+          "date": "2026-04-06",
+          "views": 287
+        },
+        {
+          "date": "2026-04-07",
+          "views": 388
+        },
+        {
+          "date": "2026-04-08",
+          "views": 434
+        },
+        {
+          "date": "2026-04-09",
+          "views": 468
+        },
+        {
+          "date": "2026-04-10",
+          "views": 466
+        },
+        {
+          "date": "2026-04-11",
+          "views": 405
+        },
+        {
+          "date": "2026-04-12",
+          "views": 411
+        },
+        {
+          "date": "2026-04-13",
+          "views": 363
+        },
+        {
+          "date": "2026-04-14",
+          "views": 327
+        },
+        {
+          "date": "2026-04-15",
+          "views": 321
+        },
+        {
+          "date": "2026-04-16",
+          "views": 316
+        },
+        {
+          "date": "2026-04-17",
+          "views": 343
+        },
+        {
+          "date": "2026-04-18",
+          "views": 283
+        },
+        {
+          "date": "2026-04-19",
+          "views": 308
+        },
+        {
+          "date": "2026-04-20",
+          "views": 389
+        },
+        {
+          "date": "2026-04-21",
+          "views": 349
+        },
+        {
+          "date": "2026-04-22",
+          "views": 393
+        },
+        {
+          "date": "2026-04-23",
+          "views": 314
+        },
+        {
+          "date": "2026-04-24",
+          "views": 297
+        },
+        {
+          "date": "2026-04-25",
+          "views": 264
+        },
+        {
+          "date": "2026-04-26",
+          "views": 313
+        },
+        {
+          "date": "2026-04-27",
+          "views": 314
+        },
+        {
+          "date": "2026-04-28",
+          "views": 322
+        },
+        {
+          "date": "2026-04-29",
+          "views": 326
+        },
+        {
+          "date": "2026-04-30",
+          "views": 297
+        },
+        {
+          "date": "2026-05-01",
+          "views": 271
+        },
+        {
+          "date": "2026-05-02",
+          "views": 195
+        },
+        {
+          "date": "2026-05-03",
+          "views": 312
+        },
+        {
+          "date": "2026-05-04",
+          "views": 532
+        },
+        {
+          "date": "2026-05-05",
+          "views": 429
+        },
+        {
+          "date": "2026-05-06",
+          "views": 389
+        },
+        {
+          "date": "2026-05-07",
+          "views": 316
+        },
+        {
+          "date": "2026-05-08",
+          "views": 204
+        },
+        {
+          "date": "2026-05-09",
+          "views": 265
+        },
+        {
+          "date": "2026-05-10",
+          "views": 245
+        },
+        {
+          "date": "2026-05-11",
+          "views": 324
+        },
+        {
+          "date": "2026-05-12",
+          "views": 347
+        },
+        {
+          "date": "2026-05-13",
+          "views": 263
+        },
+        {
+          "date": "2026-05-14",
+          "views": 294
+        },
+        {
+          "date": "2026-05-15",
+          "views": 230
+        },
+        {
+          "date": "2026-05-16",
+          "views": 205
+        },
+        {
+          "date": "2026-05-17",
+          "views": 216
+        },
+        {
+          "date": "2026-05-18",
+          "views": 323
+        },
+        {
+          "date": "2026-05-19",
+          "views": 291
+        },
+        {
+          "date": "2026-05-20",
+          "views": 302
+        },
+        {
+          "date": "2026-05-21",
+          "views": 335
+        },
+        {
+          "date": "2026-05-22",
+          "views": 280
+        },
+        {
+          "date": "2026-05-23",
+          "views": 208
+        },
+        {
+          "date": "2026-05-24",
+          "views": 295
+        },
+        {
+          "date": "2026-05-25",
+          "views": 295
+        },
+        {
+          "date": "2026-05-26",
+          "views": 298
+        },
+        {
+          "date": "2026-05-27",
+          "views": 299
+        },
+        {
+          "date": "2026-05-28",
+          "views": 372
+        },
+        {
+          "date": "2026-05-29",
+          "views": 322
+        },
+        {
+          "date": "2026-05-30",
+          "views": 197
+        },
+        {
+          "date": "2026-05-31",
+          "views": 248
+        },
+        {
+          "date": "2026-06-01",
+          "views": 272
+        },
+        {
+          "date": "2026-06-02",
+          "views": 258
+        },
+        {
+          "date": "2026-06-03",
+          "views": 235
+        },
+        {
+          "date": "2026-06-04",
+          "views": 249
+        },
+        {
+          "date": "2026-06-05",
+          "views": 256
+        },
+        {
+          "date": "2026-06-06",
+          "views": 205
+        },
+        {
+          "date": "2026-06-07",
+          "views": 346
+        },
+        {
+          "date": "2026-06-08",
+          "views": 265
+        },
+        {
+          "date": "2026-06-09",
+          "views": 310
+        },
+        {
+          "date": "2026-06-10",
+          "views": 244
+        },
+        {
+          "date": "2026-06-11",
+          "views": 292
+        },
+        {
+          "date": "2026-06-12",
+          "views": 329
+        },
+        {
+          "date": "2026-06-13",
+          "views": 220
+        },
+        {
+          "date": "2026-06-14",
+          "views": 211
+        },
+        {
+          "date": "2026-06-15",
+          "views": 270
+        },
+        {
+          "date": "2026-06-16",
+          "views": 260
+        },
+        {
+          "date": "2026-06-17",
+          "views": 252
+        },
+        {
+          "date": "2026-06-18",
+          "views": 316
+        },
+        {
+          "date": "2026-06-19",
+          "views": 250
+        },
+        {
+          "date": "2026-06-20",
+          "views": 191
+        },
+        {
+          "date": "2026-06-21",
+          "views": 181
+        },
+        {
+          "date": "2026-06-22",
+          "views": 204
+        },
+        {
+          "date": "2026-06-23",
+          "views": 219
+        },
+        {
+          "date": "2026-06-24",
+          "views": 213
+        },
+        {
+          "date": "2026-06-25",
+          "views": 210
+        },
+        {
+          "date": "2026-06-26",
+          "views": 193
+        },
+        {
+          "date": "2026-06-27",
+          "views": 158
+        },
+        {
+          "date": "2026-06-28",
+          "views": 185
+        },
+        {
+          "date": "2026-06-29",
+          "views": 197
+        },
+        {
+          "date": "2026-06-30",
+          "views": 166
+        },
+        {
+          "date": "2026-07-01",
+          "views": 153
+        },
+        {
+          "date": "2026-07-02",
+          "views": 164
+        },
+        {
+          "date": "2026-07-03",
+          "views": 185
+        },
+        {
+          "date": "2026-07-04",
+          "views": 145
+        },
+        {
+          "date": "2026-07-05",
+          "views": 166
+        },
+        {
+          "date": "2026-07-06",
+          "views": 157
+        },
+        {
+          "date": "2026-07-07",
+          "views": 201
+        },
+        {
+          "date": "2026-07-08",
+          "views": 166
+        },
+        {
+          "date": "2026-07-09",
+          "views": 159
+        },
+        {
+          "date": "2026-07-10",
+          "views": 161
+        },
+        {
+          "date": "2026-07-11",
+          "views": 210
+        },
+        {
+          "date": "2026-07-12",
+          "views": 171
+        },
+        {
+          "date": "2026-07-13",
+          "views": 163
+        },
+        {
+          "date": "2026-07-14",
+          "views": 154
+        },
+        {
+          "date": "2026-07-15",
+          "views": 179
+        },
+        {
+          "date": "2026-07-16",
+          "views": 225
+        },
+        {
+          "date": "2026-07-17",
+          "views": 202
+        },
+        {
+          "date": "2026-07-18",
+          "views": 219
+        },
+        {
+          "date": "2026-07-19",
+          "views": 179
+        },
+        {
+          "date": "2026-07-20",
+          "views": 191
+        },
+        {
+          "date": "2026-07-21",
+          "views": 166
+        },
+        {
+          "date": "2026-07-22",
+          "views": 170
+        },
+        {
+          "date": "2026-07-23",
+          "views": 193
+        },
+        {
+          "date": "2026-07-24",
+          "views": 164
+        },
+        {
+          "date": "2026-07-25",
+          "views": 161
+        },
+        {
+          "date": "2026-07-26",
+          "views": 157
+        },
+        {
+          "date": "2026-07-27",
+          "views": 164
+        },
+        {
+          "date": "2026-07-28",
+          "views": 168
+        },
+        {
+          "date": "2026-07-29",
+          "views": 225
+        },
+        {
+          "date": "2026-07-30",
+          "views": 257
+        },
+        {
+          "date": "2026-07-31",
+          "views": 191
+        },
+        {
+          "date": "2026-08-01",
+          "views": 212
+        },
+        {
+          "date": "2026-08-02",
+          "views": 169
+        },
+        {
+          "date": "2026-08-03",
+          "views": 175
+        },
+        {
+          "date": "2026-08-04",
+          "views": 199
+        },
+        {
+          "date": "2026-08-05",
+          "views": 210
+        },
+        {
+          "date": "2026-08-06",
+          "views": 192
+        },
+        {
+          "date": "2026-08-07",
+          "views": 217
+        },
+        {
+          "date": "2026-08-08",
+          "views": 230
+        },
+        {
+          "date": "2026-08-09",
+          "views": 212
+        },
+        {
+          "date": "2026-08-10",
+          "views": 180
+        },
+        {
+          "date": "2026-08-11",
+          "views": 232
+        },
+        {
+          "date": "2026-08-12",
+          "views": 427
+        },
+        {
+          "date": "2026-08-13",
+          "views": 353
+        },
+        {
+          "date": "2026-08-14",
+          "views": 282
+        },
+        {
+          "date": "2026-08-15",
+          "views": 254
+        },
+        {
+          "date": "2026-08-16",
+          "views": 262
+        },
+        {
+          "date": "2026-08-17",
+          "views": 257
+        },
+        {
+          "date": "2026-08-18",
+          "views": 257
+        },
+        {
+          "date": "2026-08-19",
+          "views": 226
+        },
+        {
+          "date": "2026-08-20",
+          "views": 197
+        },
+        {
+          "date": "2026-08-21",
+          "views": 176
+        },
+        {
+          "date": "2026-08-22",
+          "views": 201
+        },
+        {
+          "date": "2026-08-23",
+          "views": 182
+        },
+        {
+          "date": "2026-08-24",
+          "views": 256
+        },
+        {
+          "date": "2026-08-25",
+          "views": 273
+        },
+        {
+          "date": "2026-08-26",
+          "views": 255
+        },
+        {
+          "date": "2026-08-27",
+          "views": 211
+        },
+        {
+          "date": "2026-08-28",
+          "views": 189
+        },
+        {
+          "date": "2026-08-29",
+          "views": 164
+        },
+        {
+          "date": "2026-08-30",
+          "views": 183
+        },
+        {
+          "date": "2026-08-31",
+          "views": 195
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "languages": [
+      "de",
+      "fr"
+    ],
+    "absolute": [
+      {
+        "language": "de",
+        "averageDailyViews": 405.33,
+        "totalViews": 147947,
+        "rank": 1
+      },
+      {
+        "language": "fr",
+        "averageDailyViews": 282.64,
+        "totalViews": 103163,
+        "rank": 2
+      }
+    ],
+    "relativeGrowth": [
+      {
+        "language": "de",
+        "percentChange": -30.49,
+        "rank": 1
+      },
+      {
+        "language": "fr",
+        "percentChange": -33.14,
+        "rank": 2
+      }
+    ],
+    "rankings": {
+      "absoluteViews": [
+        "de",
+        "fr"
+      ],
+      "relativeGrowth": [
+        "de",
+        "fr"
+      ],
+      "trendPerPeriod": [
+        "fr",
+        "de"
+      ],
+      "shareOfEditionChange": [
+        "de",
+        "fr"
+      ],
+      "evidenceStrength": [
+        "de",
+        "fr"
+      ]
+    },
+    "normalizedIndex": {
+      "base": "100 = average daily views in each language’s baseline window",
+      "granularity": "month",
+      "series": {
+        "de": [
+          {
+            "period": "2025-09",
+            "index": 102.31
+          },
+          {
+            "period": "2025-10",
+            "index": 89.68
+          },
+          {
+            "period": "2025-11",
+            "index": 108.35
+          },
+          {
+            "period": "2025-12",
+            "index": 102.98
+          },
+          {
+            "period": "2026-01",
+            "index": 116.42
+          },
+          {
+            "period": "2026-02",
+            "index": 108.47
+          },
+          {
+            "period": "2026-03",
+            "index": 105.2
+          },
+          {
+            "period": "2026-04",
+            "index": 118.88
+          },
+          {
+            "period": "2026-05",
+            "index": 89.64
+          },
+          {
+            "period": "2026-06",
+            "index": 81.14
+          },
+          {
+            "period": "2026-07",
+            "index": 56.21
+          },
+          {
+            "period": "2026-08",
+            "index": 71.55
+          }
+        ],
+        "fr": [
+          {
+            "period": "2025-09",
+            "index": 105.13
+          },
+          {
+            "period": "2025-10",
+            "index": 93.39
+          },
+          {
+            "period": "2025-11",
+            "index": 101.71
+          },
+          {
+            "period": "2025-12",
+            "index": 81.55
+          },
+          {
+            "period": "2026-01",
+            "index": 99.86
+          },
+          {
+            "period": "2026-02",
+            "index": 89
+          },
+          {
+            "period": "2026-03",
+            "index": 89.86
+          },
+          {
+            "period": "2026-04",
+            "index": 104.68
+          },
+          {
+            "period": "2026-05",
+            "index": 91.44
+          },
+          {
+            "period": "2026-06",
+            "index": 74.3
+          },
+          {
+            "period": "2026-07",
+            "index": 55.92
+          },
+          {
+            "period": "2026-08",
+            "index": 70.6
+          }
+        ]
+      },
+      "final": {
+        "de": 69.51,
+        "fr": 66.86
+      }
+    },
+    "projectShare": [
+      {
+        "language": "de",
+        "averagePerMillion": 17.489,
+        "percentChange": -25.83
+      },
+      {
+        "language": "fr",
+        "averagePerMillion": 14.465,
+        "percentChange": -27.46
+      }
+    ],
+    "highlights": [
+      "Largest absolute audience: de (405 average daily views). Absolute views reflect the size of each Wikipedia edition, not only interest in the topic.",
+      "Smallest decline (all compared languages declined) (baseline → latest window): de (-30.5%; index 69.51).",
+      "The growth difference between de and fr is small (2.7 percentage points) and should not be over-interpreted.",
+      "Trend per month (log-linear): strongest fr (-3.58%), weakest de (-3.70%).",
+      "de: share of all de.wikipedia pageviews changed -25.8% (edition-wide traffic changed -6.3%).",
+      "fr: share of all fr.wikipedia pageviews changed -27.5% (edition-wide traffic changed -7.8%)."
+    ],
+    "evidence": {
+      "strength": "moderate",
+      "score": 3,
+      "reasons": [
+        "overall strength is the weakest language's (de: moderate, fr: moderate)",
+        "de: 100% of expected daily observations are present; 12 complete months analysed",
+        "fr: 100% of expected daily observations are present; 12 complete months analysed"
+      ],
+      "warnings": [
+        "de: baseline and latest windows cover different calendar months, so part of the change may be seasonal",
+        "fr: baseline and latest windows cover different calendar months, so part of the change may be seasonal",
+        "languages have differently sized audiences; compare relative growth (index) rather than absolute views when judging momentum"
+      ]
+    }
+  },
+  "evidence": {
+    "strength": "moderate",
+    "score": 3,
+    "reasons": [
+      "overall strength is the weakest language's (de: moderate, fr: moderate)",
+      "de: 100% of expected daily observations are present; 12 complete months analysed",
+      "fr: 100% of expected daily observations are present; 12 complete months analysed"
+    ],
+    "warnings": [
+      "de: baseline and latest windows cover different calendar months, so part of the change may be seasonal",
+      "fr: baseline and latest windows cover different calendar months, so part of the change may be seasonal",
+      "languages have differently sized audiences; compare relative growth (index) rather than absolute views when judging momentum"
+    ]
+  },
+  "findings": [
+    "de — \"Merkur (Planet)\": average daily views 423 → 294 (-30.5%; first 3 complete months (Sep 2025–Nov 2025) vs last 3 complete months (Jun 2026–Aug 2026)). Trend: down (-3.70% per month, R² 0.383, Spearman ρ -0.4755; moderate confidence). Trend persists after removing 1 spike day(s): change -30.5% with vs -29.9% without; trend down in both. Evidence strength: moderate.",
+    "fr — \"Mercure (planète)\": average daily views 321 → 215 (-33.1%; first 3 complete months (Sep 2025–Nov 2025) vs last 3 complete months (Jun 2026–Aug 2026)). Trend: down (-3.58% per month, R² 0.4908, Spearman ρ -0.6993; moderate confidence). Trend persists after removing 1 spike day(s): change -33.1% with vs -33.9% without; trend down in both. Evidence strength: moderate.",
+    "Largest absolute audience: de (405 average daily views). Absolute views reflect the size of each Wikipedia edition, not only interest in the topic.",
+    "Smallest decline (all compared languages declined) (baseline → latest window): de (-30.5%; index 69.51).",
+    "The growth difference between de and fr is small (2.7 percentage points) and should not be over-interpreted.",
+    "Trend per month (log-linear): strongest fr (-3.58%), weakest de (-3.70%).",
+    "de: share of all de.wikipedia pageviews changed -25.8% (edition-wide traffic changed -6.3%).",
+    "fr: share of all fr.wikipedia pageviews changed -27.5% (edition-wide traffic changed -7.8%)."
+  ],
+  "warnings": [
+    "de: baseline and latest windows cover different calendar months, so part of the change may be seasonal",
+    "fr: baseline and latest windows cover different calendar months, so part of the change may be seasonal"
+  ],
+  "limitations": [
+    "Pageviews count page loads, not unique users; one person can generate many views.",
+    "Wikipedia interest is not market demand, purchase intent, revenue potential or willingness to pay.",
+    "News, holidays, school terms, media coverage or links from other sites can cause temporary spikes.",
+    "Language editions have very different audience sizes; compare relative growth, not only absolute views.",
+    "Article quality, length, renaming and search-engine placement differ between languages and affect views.",
+    "Days with zero views are omitted by the API and counted as missing unless --missing-as-zero is set.",
+    "Only \"user\" agent traffic is counted by default; Wikimedia bot filtering is heuristic and imperfect.",
+    "Metrics are descriptive; no statistical significance test or forecast is performed."
+  ],
+  "artifacts": {
+    "directory": "output/mercury-Q308/de-fr_2025-09-01_2026-08-31",
+    "analysis": "output/mercury-Q308/de-fr_2025-09-01_2026-08-31/analysis.json",
+    "charts": [
+      {
+        "kind": "normalized",
+        "path": "output/mercury-Q308/de-fr_2025-09-01_2026-08-31/charts/normalized.svg",
+        "title": "Relative growth index"
+      },
+      {
+        "kind": "comparison",
+        "path": "output/mercury-Q308/de-fr_2025-09-01_2026-08-31/charts/comparison.svg",
+        "title": "Change in average daily views"
+      },
+      {
+        "kind": "trend",
+        "path": "output/mercury-Q308/de-fr_2025-09-01_2026-08-31/charts/trend.svg",
+        "title": "Daily pageviews"
+      }
+    ],
+    "report": "output/mercury-Q308/de-fr_2025-09-01_2026-08-31/report.pdf"
+  },
+  "followUp": {
+    "commands": [
+      {
+        "intent": "Same topic and languages, last 12 months only",
+        "command": "pnpm analyze --from output/mercury-Q308/de-fr_2025-09-01_2026-08-31/analysis.json --period 12m"
+      },
+      {
+        "intent": "Exclude the largest spike in each language",
+        "command": "pnpm analyze --from output/mercury-Q308/de-fr_2025-09-01_2026-08-31/analysis.json --exclude-largest-spike"
+      },
+      {
+        "intent": "Exclude the largest detected spike (de: 2025-09-28..2025-09-28) in all languages",
+        "command": "pnpm analyze --from output/mercury-Q308/de-fr_2025-09-01_2026-08-31/analysis.json --exclude-dates 2025-09-28..2025-09-28"
+      },
+      {
+        "intent": "Add or change languages",
+        "command": "pnpm analyze --from output/mercury-Q308/de-fr_2025-09-01_2026-08-31/analysis.json --languages de,fr,<code>"
+      },
+      {
+        "intent": "Regenerate charts and PDF from this JSON (no network)",
+        "command": "pnpm generate-report --input output/mercury-Q308/de-fr_2025-09-01_2026-08-31/analysis.json"
+      }
+    ]
+  }
+}

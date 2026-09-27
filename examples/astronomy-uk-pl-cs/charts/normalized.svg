@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-labelledby="chart-title chart-desc">
+<title id="chart-title">Relative growth index: astronomy</title>
+<desc id="chart-desc">Normalised growth index (baseline = 100) for uk, pl, cs. Latest-window values: uk 40.38, pl 83.87, cs 66.66.</desc>
+<rect x="0" y="0" width="760" height="330" fill="#ffffff"/>
+<text x="58" y="20" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933">Relative growth index: astronomy</text>
+<text x="58" y="36" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="normal" fill="#52606d">100 = each language&apos;s baseline-window average daily views · monthly averages · not absolute popularity</text>
+<line x1="58" y1="296" x2="610" y2="296" stroke="#e4e7eb" stroke-width="1"/>
+<text x="52" y="299" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="end" font-weight="normal" fill="#52606d">0</text>
+<line x1="58" y1="234.5" x2="610" y2="234.5" stroke="#e4e7eb" stroke-width="1"/>
+<text x="52" y="237.5" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="end" font-weight="normal" fill="#52606d">100</text>
+<line x1="58" y1="173" x2="610" y2="173" stroke="#e4e7eb" stroke-width="1"/>
+<text x="52" y="176" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="end" font-weight="normal" fill="#52606d">200</text>
+<line x1="58" y1="111.5" x2="610" y2="111.5" stroke="#e4e7eb" stroke-width="1"/>
+<text x="52" y="114.5" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="end" font-weight="normal" fill="#52606d">300</text>
+<line x1="58" y1="50" x2="610" y2="50" stroke="#e4e7eb" stroke-width="1"/>
+<text x="52" y="53" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="end" font-weight="normal" fill="#52606d">400</text>
+<line x1="58" y1="234.5" x2="610" y2="234.5" stroke="#7b8794" stroke-width="1" stroke-dasharray="4 3"/>
+<path d="M68.6,84.93L91.32,218.6L114.79,217.37L137.51,224.78L160.98,228.1L184.45,233.46L205.65,249.46L229.13,250.1L251.84,261.62L275.32,279.75L298.03,282.7L321.51,279.65L344.98,222.06L367.7,268.33L391.17,270.91L413.88,268.9L437.36,276.44L460.83,275.49L482.03,278.13L505.51,277.76L528.22,269.86L551.7,283.34L574.41,281.96L597.88,280.31" fill="none" stroke="#0072B2" stroke-width="2"/>
+<path d="M68.6,203.92L91.32,216.29L114.79,220.91L137.51,228.88L160.98,218.42L184.45,221.77L205.65,224.89L229.13,249.88L251.84,253.53L275.32,256.28L298.03,260.64L321.51,257.14L344.98,220.21L367.7,253.21L391.17,155.49L413.88,243.55L437.36,251.31L460.83,255.44L482.03,253.85L505.51,251.97L528.22,258.41L551.7,264.17L574.41,264.38L597.88,259.3" fill="none" stroke="#D55E00" stroke-width="2"/>
+<path d="M68.6,202.65L91.32,220.88L114.79,223.21L137.51,229.93L160.98,213L184.45,210.05L205.65,233.82L229.13,242L251.84,237.26L275.32,256.65L298.03,273.22L321.51,268.45L344.98,246.84L367.7,253.49L391.17,247.15L413.88,252.08L437.36,250.05L460.83,255.76L482.03,254.89L505.51,252.47L528.22,254.26L551.7,262.8L574.41,259.97L597.88,270.03" fill="none" stroke="#009E73" stroke-width="2"/>
+<text x="618" y="262.3" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="bold" fill="#D55E00">pl: 84 (latest window)</text>
+<text x="618" y="275.3" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="bold" fill="#009E73">cs: 67 (latest window)</text>
+<text x="618" y="288.3" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="10" text-anchor="start" font-weight="bold" fill="#0072B2">uk: 40 (latest window)</text>
+<line x1="58" y1="296" x2="610" y2="296" stroke="#9aa5b1" stroke-width="1"/>
+<line x1="80.72" y1="296" x2="80.72" y2="300" stroke="#9aa5b1" stroke-width="1"/>
+<text x="80.72" y="311" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">Oct 2024</text>
+<line x1="150.38" y1="296" x2="150.38" y2="300" stroke="#9aa5b1" stroke-width="1"/>
+<text x="150.38" y="311" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">Jan 2025</text>
+<line x1="218.53" y1="296" x2="218.53" y2="300" stroke="#9aa5b1" stroke-width="1"/>
+<text x="218.53" y="311" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">Apr 2025</text>
+<line x1="287.43" y1="296" x2="287.43" y2="300" stroke="#9aa5b1" stroke-width="1"/>
+<text x="287.43" y="311" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">Jul 2025</text>
+<line x1="357.09" y1="296" x2="357.09" y2="300" stroke="#9aa5b1" stroke-width="1"/>
+<text x="357.09" y="311" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">Oct 2025</text>
+<line x1="426.76" y1="296" x2="426.76" y2="300" stroke="#9aa5b1" stroke-width="1"/>
+<text x="426.76" y="311" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">Jan 2026</text>
+<line x1="494.91" y1="296" x2="494.91" y2="300" stroke="#9aa5b1" stroke-width="1"/>
+<text x="494.91" y="311" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">Apr 2026</text>
+<line x1="563.81" y1="296" x2="563.81" y2="300" stroke="#9aa5b1" stroke-width="1"/>
+<text x="563.81" y="311" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="9" text-anchor="middle" font-weight="normal" fill="#52606d">Jul 2026</text>
+</svg>
